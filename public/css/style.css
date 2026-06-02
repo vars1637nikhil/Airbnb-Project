@@ -1,0 +1,115 @@
+body{
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  /* font-optical-sizing: auto; */
+  /* font-weight: 200; */
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: 16px;
+}
+/* form {
+    max-width: 500px;
+    margin: auto;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+} */
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.container{
+    flex: 1;
+}
+.navbar{
+    height: 5rem;
+    background-color: white;
+}
+.fa-compass{
+    color: #fe424d;
+    height: 2rem;
+}
+.nav-link{
+    color: #222222 !important; 
+}
+.f-info-links a{
+    color: #222222;
+    text-decoration: none;
+}
+.f-info-links a:hover{
+    text-decoration: underline;
+}
+.f-info-links, .f-info-socials, .f-info-brand{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info{
+    text-align: center;
+    display: flex;
+    background-color: #ebebeb;
+    height: 8rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.listing-card{
+    border: none !important;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    width: 100% !important;
+    object-fit: cover !important;
+}
+.card-body{
+    padding: 0 !important;
+}
+.card-text p{
+    font-weight: 400 !important;
+}
+.listing_link{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+}
+.card-img-overlay:hover{
+    opacity: 0.2;
+    background-color: white;
+}
+.add-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.edit-btn{
+    background-color: #fe424d !important;
+    border: none !important;
+}
+.show-img{
+    height: 30vh;
+}
+.btns{
+    display: flex;
+}
+.show-img{
+    padding-left: 0;
+    padding-right: 0;
+    
+}
+.modal-backdrop {
+  display: none !important;
+}
+#map { 
+   height: 400px;
+   width: 80vh;
+}
