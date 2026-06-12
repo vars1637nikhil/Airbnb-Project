@@ -6,9 +6,9 @@ const ExpressError = require('../utils/ExpressError.js');
 const Listing = require('../models/listing.js');
 const {isloggedIn, isOwner, validatelisting} = require('../middleware.js');
 const listingController = require("../controllers/listing.js");
-const multer  = require('multer');
-const { storage } = require("../cloudConfig.js");
-const upload = multer({ storage });
+// const multer  = require('multer');
+// const { storage } = require("../cloudConfig.js");
+// const upload = multer({ storage });
 
 router.route("/search").get(wrapAsync(listingController.search));
 
@@ -17,7 +17,7 @@ router
 .get(wrapAsync(listingController.index))
 .post(
     isloggedIn,
-    upload.single("listing[image]"),
+    // upload.single("listing[image]"),
     validatelisting,
     wrapAsync(listingController.createListing)
 );
@@ -32,7 +32,7 @@ router.route("/:id")
     isloggedIn,
     isOwner,
     validatelisting,
-    upload.single("listing[image]"),
+    // upload.single("listing[image]"),
     wrapAsync(listingController.updatelisting)
 )
 .delete(
