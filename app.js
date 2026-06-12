@@ -22,6 +22,8 @@ const userRouter = require("./routes/user.js");
 const app = express();
 const dbUrl = process.env.ATLASDB_URL; 
 
+console.log("DB URL =", dbUrl);
+
 const MongoStore = require("connect-mongo");
 
 const store = MongoStore.default.create({
